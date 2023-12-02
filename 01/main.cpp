@@ -14,7 +14,6 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
-    //std::array<std::string, 9> digits = {"one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
     std::map<std::string, size_t> valid_digits = {
         {"1", 1},
         {"2", 2},
@@ -52,8 +51,8 @@ size_t calibrate_passwort(const std::string &filename, const std::map<std::strin
         return 1;
     }
 
-    std::string line;
     size_t calibration = 0;
+    std::string line;
     while (std::getline(file, line)) {
         calibration += get_first_and_last_digit(line, valid_digits);
     }

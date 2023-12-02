@@ -4,8 +4,6 @@
 #include <vector>
 #include <map>
 
-//Game 1: 3 blue, 4 red; 1 red, 2 green, 6 blue; 2 green
-// assumes proper whitespaces.. maybe need to delete all space characters
 std::vector<std::string> split_string(const std::string &, const std::string &);
 bool is_valid_game(const std::string &, const std::map<std::string, int> &);
 int get_game_power(const std::string &);
