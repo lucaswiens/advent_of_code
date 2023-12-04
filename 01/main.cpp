@@ -1,7 +1,5 @@
-#include <cstddef>
 #include <fstream>
 #include <iostream>
-#include <string>
 #include <map>
 
 size_t get_first_and_last_digit(const std::string &, const std::map<std::string, size_t> &);
